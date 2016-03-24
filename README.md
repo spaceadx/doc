@@ -5,7 +5,7 @@ Inclua o rocket.js no seu projeto
 ```demo
 <script src="https://azure-2mobile.netdna-ssl.com/static/rocket.js"></script>
 ```
-##### Métodos
+#### Métodos
 Todos os métodos disponíveis
 
 setClickTag(tag:String) :[this]
@@ -51,7 +51,7 @@ new Rocket().setExpandElement("btnParaMinimizar","divCollapsed",function(){
 });
 ```
 
-### Exemplo
+#### Exemplo
 ```demo
 <script src="https://azure-2mobile.netdna-ssl.com/static/rocket.js"></script>
 <script type="text/javascript" id="gwd-init-code">

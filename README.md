@@ -33,9 +33,6 @@ setExpandable(collapsedID:String, expandedID: String) :[this]
 // Seta quais os elementos minimizado e expandido e adiciona o mouseover automaticamente para quando passar o mouse sobre o minimizado expandir.
 new Rocket().setExpandable("divCollapsed","divExpanded")
 ```
-.setExpandElement("btnParaExpandir","divCollapsed",function(){
-          alert('expandiu');
-        });
 setExpandElement(expandButtonID:String, elementToShowID:String, callback:Function(void)) :[this]
 ```
 // Seta o botão que deve expandir o banner e a qual div deve ser exibida, executa o callback assim que o botão for clicado.

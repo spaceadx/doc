@@ -8,11 +8,11 @@ Inclua o rocket2.js no seu projeto
 
 #### Exemplos
 
-+ [Banner HTML5](docs/html5/index.html)
-+ [Banner HTML5 floating com botão de fechar](docs/floating/index.html)
-+ [Banner HTML5 floating com botão de fechar customizado](docs/floating_custom/index.html)
-+ [Banner HTML5 floating com fechamento automático](docs/floating_timeout/index.html)
-+ [Banner HTML5 expansível](docs/expansivel/index.html)
++ [Banner HTML5](https://yvesroos.github.io/templates/html5/index.html)
++ [Banner HTML5 floating com botão de fechar](https://yvesroos.github.io/templates/floating/index.html)
++ [Banner HTML5 floating com botão de fechar customizado](https://yvesroos.github.io/templates/floating_custom/index.html)
++ [Banner HTML5 floating com fechamento automático](https://yvesroos.github.io/templates/floating_timeout/index.html)
++ [Banner HTML5 expansível](https://yvesroos.github.io/templates/expansivel/index.html)
 
 #### Propriedades
 Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+    html, body{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+	#banner	{
+		width: 300px;
+		height: 250px;
+		background: url("images/space.png");
+        position: absolute;
+        z-index: 0;
+	}
+    #banner_exp	{
+		width: 300px;
+		height: 600px;
+		background: url("images/space_exp.png");
+        position: absolute;
+        z-index: 5;
+        display: none;
+	}
+</style>
+</head>
+<body>
+    <div id="banner"></div>
+    <div id="banner_exp"></div>
+
+    <script type="text/javascript" src="https://cdn.00px.net/static/rocket2.min.js"></script>
+    <script type="text/javascript">
+        var config = {
+            width: 300,
+            height: 250,
+            clickElement:'banner_exp'
+        };
+
+        var rocket = new ROCKET(config);
+
+        var body = document.querySelector('body')
+        var banner = document.getElementById('banner')
+        var banner_exp = document.getElementById('banner_exp')
+        body.addEventListener("mouseover", function(){
+            banner_exp.style.display = 'block';
+            rocket.expand(300,600);
+        })
+        body.addEventListener("mouseout", function(){
+            banner_exp.style.display = 'none';
+            rocket.collapse();
+        })
+
+    </script>
+</body>
+</html>

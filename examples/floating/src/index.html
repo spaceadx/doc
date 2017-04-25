@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+    html, body{
+        margin: 0px;
+        padding: 0px;
+    }
+	#banner	{
+		width: 300px;
+		height: 250px;
+		background: url("images/space.png");
+	}
+</style>
+</head>
+<body>
+    <div id="banner"></div>
+
+    <script type="text/javascript" src="https://cdn.00px.net/static/rocket2.min.js"></script>
+    <script type="text/javascript">
+        var config = {
+            width: 300,
+            height: 250,
+            closeButton: true,
+            centralize: true,
+            clickElement: 'banner'
+        };
+        var rocket = new ROCKET(config);
+    </script>
+</body>
+</html>

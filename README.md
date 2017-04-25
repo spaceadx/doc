@@ -25,47 +25,47 @@ var config = {
   //ALTURA (EM PX, OBRIGATÓRIO)
   //height: 250,
 
-  //ELEMENTO PARA O PARA REDIRECIONAR
+  //ELEMENTO PARA O REDIRECIONAMENTO
   //É USADO EM PRATICAMENTE TODOS OS BANNERS
   //PODE SER USADO O OBJETO Element, O ID COM '#id', '.class'. CASO SEJA SEM
   //NENHUM PREFIXO ELE IRÁ PROCURAR PELO ELEMENTO COM O ID CORRESPONDENTE
   clickElement:'banner',
 
-  //LARGURA QUANDO EXPANDIR (EM PX)
+  //LARGURA QUANDO EXPANDIR (EM PX) - DEFAULT: 300
   // expanded_width: 300,
 
-  //LARGURA QUANDO EXPANDIR (EM PX)
-  // expanded_height: 500,
+  //ALTURA QUANDO EXPANDIR (EM PX)  - DEFAULT: 250
+  // expanded_height: 250,
 
-  //CRIAÇÃO AUTOMATICAMENTE DO BOTÃO DE FECHAR
+  //CRIAÇÃO AUTOMÁTICA DO BOTÃO DE FECHAR - DEFAULT: false
   //closeButton: false,
 
-  //IMAGEM CUSTOMIZADA PARA O BOTÃO DE FECHAR
+  //IMAGEM CUSTOMIZADA PARA O BOTÃO DE FECHAR - DEFAULT: undefined
   //(DEVE SER PASSADO O CAMINHO RELATIVO A PASTA RAIZ DO BANNER)
   //btnImage: '',
 
-  //O BANNER DEVE APARECER CENTRALIZADO
+  //O BANNER DEVE APARECER CENTRALIZADO - DEFAULT: false
   //centralize: false,
 
-  //O BANNER DEVE APARECER CENTRALIZADO VERTICALMENTE
+  //O BANNER DEVE APARECER CENTRALIZADO VERTICALMENTE - DEFAULT: false
   //centralizeY: false,
 
-  //O BANNER DEVE APARECER CENTRALIZADO HORIZONTALMENTE
+  //O BANNER DEVE APARECER CENTRALIZADO HORIZONTALMENTE - DEFAULT: false
   //centralizeX: false,
 
-  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DO TOPO (EM PX)
+  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DO TOPO (EM PX) - DEFAULT: undefined
   //appendTop: 0,
 
-  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DEBAIXO (EM PX)
+  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DEBAIXO (EM PX) - DEFAULT: undefined
   //appendBottom: 0,
 
-  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA DIREITA (EM PX)
+  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA DIREITA (EM PX) - DEFAULT: undefined
   //appendRight: 0,
 
-  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA ESQUERDA (EM PX)
+  //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA ESQUERDA (EM PX) - DEFAULT: undefined
   //appendLeft: 0,
 
-  //TEMPO PARA O BANNER FECHAR AUTOMATICAMENTE (EM MILISEGUNDOS)
+  //TEMPO PARA O BANNER FECHAR AUTOMATICAMENTE (EM MILISEGUNDOS) - DEFAULT: undefined
   //closeTimeout: 1500,
 }
 
@@ -154,21 +154,4 @@ collapse() :[this]
 // Método que deve ser invocado quando o banner precisar retrair
 var rocket = new Rocket(config)
 rocket.collapse()
-```
-
-#### Exemplo
-```demo
-<script src="https://cdn.00px.net/static/rocket2.min.js"></script>
-<script type="text/javascript">
-  //PADRÃO
-  var rocket = new ROCKET({width: 300, height: 250}).setClickElement("banner");
-  //EXPAND
-  document.getElementById("divCollapsed").addEventListener("mouseenter", function(){
-    rocket.expand(300,600);
-  });
-  //COLLAPSE
-  document.getElementById("divExpanded").addEventListener("mouseout", function(){
-    rocket.collapse();
-  });
-</script>
 ```

@@ -23,26 +23,29 @@ var config = {
   width: 300,
 
   //ALTURA (EM PX, OBRIGATÓRIO)
-  //height: 250,
+  height: 250,
 
-  //ELEMENTO PARA O REDIRECIONAMENTO
+  //ELEMENTO PARA O REDIRECIONAMENTO (OBRIGATÓRIO)
   //É USADO EM PRATICAMENTE TODOS OS BANNERS
   //PODE SER USADO O OBJETO Element, O ID COM '#id', '.class'. CASO SEJA SEM
   //NENHUM PREFIXO ELE IRÁ PROCURAR PELO ELEMENTO COM O ID CORRESPONDENTE
   clickElement:'banner',
 
-  //LARGURA QUANDO EXPANDIR (EM PX) - DEFAULT: 300
-  // expanded_width: 300,
-
-  //ALTURA QUANDO EXPANDIR (EM PX)  - DEFAULT: 250
-  // expanded_height: 250,
-
   //CRIAÇÃO AUTOMÁTICA DO BOTÃO DE FECHAR - DEFAULT: false
   //closeButton: false,
 
+  //TEXTO CUSTOMIZADO PARA O BOTÃO DE FECHAR - DEFAULT: 'Fechar X'
+  //btnCloseImage: '',
+
   //IMAGEM CUSTOMIZADA PARA O BOTÃO DE FECHAR - DEFAULT: undefined
   //(DEVE SER PASSADO O CAMINHO RELATIVO A PASTA RAIZ DO BANNER)
-  //btnImage: '',
+  //btnCloseImage: '',
+
+  //BOTÃO DE FECHAR DEFINIDO PELO USUÁRIO - DEFAULT: undefined
+  // !! CASO A VARÍAVEL closeButton SEJA true ELA TERÁ PREFERÊNCIA !!
+  //PODE SER USADO O OBJETO Element, O ID COM '#id', '.class'. CASO SEJA SEM
+  //NENHUM PREFIXO ELE IRÁ PROCURAR PELO ELEMENTO COM O ID CORRESPONDENTE
+  //closeElement: 'close',
 
   //O BANNER DEVE APARECER CENTRALIZADO - DEFAULT: false
   //centralize: false,
@@ -63,10 +66,7 @@ var config = {
   //appendRight: 0,
 
   //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA ESQUERDA (EM PX) - DEFAULT: undefined
-  //appendLeft: 0,
-
-  //TEMPO PARA O BANNER FECHAR AUTOMATICAMENTE (EM MILISEGUNDOS) - DEFAULT: undefined
-  //closeTimeout: 1500,
+  //appendLeft: 0
 }
 
 new Rocket(config)
@@ -75,68 +75,11 @@ new Rocket(config)
 #### Métodos
 Todos os métodos disponíveis
 
-setClickElement(element:String|Object) :[this]
-```
-// Seta qual a área clicavel do banner *tem que ser o id do element
-new Rocket(config).setClickElement(document.getElementById('id')) ou
-new Rocket(config).setClickElement('id') ou
-new Rocket(config).setClickElement('#id') ou
-new Rocket(config).setClickElement('.class')
-```
 close() :[this]
 ```
 //Método para fechar o banner
 var rocket = new Rocket(config)
 rocket.close()
-```
-centralize() :[this]
-```
-// Centraliza o banner
-new Rocket(config).centralize()
-```
-centralizeY() :[this]
-```
-// Centraliza o banner verticalmente
-new Rocket(config).centralizeY()
-```
-centralizeX() :[this]
-```
-// Centraliza o banner horizontalmente
-new Rocket(config).centralizeX()
-```
-appendTop(timer:Integer) :[this]
-```
-// Ajusta o banner com distância de X px do topo
-new Rocket(config).appendTop(15)
-```
-appendBottom(timer:Integer) :[this]
-```
-// Ajusta o banner com distância de X px de baixo
-new Rocket(config).appendBottom(15)
-```
-appendLeft(timer:Integer) :[this]
-```
-// Ajusta o banner com distância de X px da esquerda
-new Rocket(config).appendLeft(15)
-```
-appendRight(timer:Integer) :[this]
-```
-// Ajusta o banner com distância de X px da direita
-new Rocket(config).appendRight(15)
-```
-setCloseButton(imageButton:String = undefined, text:String = 'Fechar X') :[this]
-```
-// Seta o botão de fechar, pode ser informado o caminho relativo da
-// imagem do botão ou o texto que deseja aparecer no botão
-new Rocket(config).setCloseButton('images/fechar.png', 'Fechar X')
-```
-setCloseElement(closeButtonID:String) :[this]
-```
-// Seta qual é o elemento que fecha o banner
-new Rocket(config).setCloseElement(document.getElementById('id')) ou
-new Rocket(config).setCloseElement('id') ou
-new Rocket(config).setCloseElement('#id') ou
-new Rocket(config).setCloseElement('.class')
 ```
 setCloseTimeout(timer:Integer) :[this]
 ```
@@ -154,4 +97,11 @@ collapse() :[this]
 // Método que deve ser invocado quando o banner precisar retrair
 var rocket = new Rocket(config)
 rocket.collapse()
+```
+
+tracking(event:String) :[this]
+```
+// Método para computar um evento que deseja ser informado a Space
+var rocket = new Rocket(config)
+rocket.tracking('mouseOver')
 ```

@@ -17,17 +17,16 @@
 <body>
     <div id="banner"></div>
 
-    <script type="text/javascript" src="https://cdn.00px.net/static/rocket2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.00px.net/static/2.1.min.js"></script>
     <script type="text/javascript">
         var config = {
             width: 300,
             height: 250,
             closeButton: true,
             centralize: true,
-            clickElement: 'banner',
-            closeTimeout: 3000
+            clickElement: 'banner'
         };
-        var rocket = new ROCKET(config);
+        var rocket = new ROCKET(config).setCloseTimeout(3000);
     </script>
 </body>
 </html>

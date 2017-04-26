@@ -3,7 +3,7 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/rocket2.min.js"></script>
+<script src="https://cdn.00px.net/static/2.1.min.js"></script>
 ```
 
 #### Exemplos

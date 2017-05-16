@@ -3,7 +3,7 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/2.1.min.js"></script>
+<script src="https://cdn.00px.net/static/2.2.min.js"></script>
 ```
 
 #### Exemplos
@@ -99,9 +99,12 @@ var rocket = new Rocket(config)
 rocket.collapse()
 ```
 
-tracking(event:String) :[this]
+tracking(event:String, inc:Integer) :[this]
 ```
 // Método para computar um evento que deseja ser informado a Space
+// e o incrementa conforme o segundo parametro
 var rocket = new Rocket(config)
 rocket.tracking('mouseOver')
+// Exemplo com incremento customizado
+rocket.tracking('purchaseTotal',120)
 ```

@@ -3,16 +3,18 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/2.2.min.js"></script>
+<script src="https://cdn.00px.net/static/2.4.min.js"></script>
 ```
 
 #### Exemplos
 
-+ [Banner HTML5](https://yvesroos.github.io/templates/html5/index.html)
-+ [Banner HTML5 floating com botão de fechar](https://yvesroos.github.io/templates/floating/index.html)
-+ [Banner HTML5 floating com botão de fechar customizado](https://yvesroos.github.io/templates/floating_custom/index.html)
-+ [Banner HTML5 floating com fechamento automático](https://yvesroos.github.io/templates/floating_timeout/index.html)
-+ [Banner HTML5 expansível](https://yvesroos.github.io/templates/expansivel/index.html)
++ [Banner HTML5](https://spaceadx.github.io/doc/html5/index.html)
++ [Banner HTML5 floating com botão de fechar](https://spaceadx.github.io/doc/floating/index.html)
++ [Banner HTML5 floating com botão de fechar customizado](https://spaceadx.github.io/doc/floating_custom/index.html)
++ [Banner HTML5 floating com fechamento automático](https://spaceadx.github.io/doc/floating_timeout/index.html)
++ [Banner HTML5 expansível](https://spaceadx.github.io/doc/expansivel/index.html)
++ [Banner HTML5 expansível para a lateral](https://spaceadx.github.io/doc/expansivel_left/index.html)
++ [Banner HTML5 expansível que empurra o conteúdo](https://spaceadx.github.io/doc/expansivel_push/index.html)
 
 #### Propriedades
 Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação

@@ -16,9 +16,9 @@
         z-index: 0;
 	}
     #banner_exp	{
-		width: 300px;
-		height: 600px;
-		background: url("images/space_exp.png");
+		width: 600px;
+		height: 250px;
+		background: url("images/space_exp.jpg");
         position: absolute;
         z-index: 5;
         display: none;
@@ -34,6 +34,7 @@
         var config = {
             width: 300,
             height: 250,
+            appendRight: 0,
             clickElement:'banner_exp'
         };
 
@@ -44,7 +45,7 @@
         var banner_exp = document.getElementById('banner_exp')
         body.addEventListener("mouseover", function(){
             banner_exp.style.display = 'block';
-            rocket.expand(300,600);
+            rocket.expand(600,250,'l');
         })
         body.addEventListener("mouseout", function(){
             banner_exp.style.display = 'none';

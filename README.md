@@ -8,13 +8,13 @@ Inclua o rocket2.js no seu projeto
 
 #### Exemplos
 
-+ [Banner HTML5](https://spaceadx.github.io/doc/html5/index.html)
-+ [Banner HTML5 floating com botão de fechar](https://spaceadx.github.io/doc/floating/index.html)
-+ [Banner HTML5 floating com botão de fechar customizado](https://spaceadx.github.io/doc/floating_custom/index.html)
-+ [Banner HTML5 floating com fechamento automático](https://spaceadx.github.io/doc/floating_timeout/index.html)
-+ [Banner HTML5 expansível](https://spaceadx.github.io/doc/expansivel/index.html)
-+ [Banner HTML5 expansível para a lateral](https://spaceadx.github.io/doc/expansivel_left/index.html)
-+ [Banner HTML5 expansível que empurra o conteúdo](https://spaceadx.github.io/doc/expansivel_push/index.html)
++ [Banner HTML5](https://spaceadx.github.io/doc/html5/)
++ [Banner HTML5 floating com botão de fechar](https://spaceadx.github.io/doc/floating/)
++ [Banner HTML5 floating com botão de fechar customizado](https://spaceadx.github.io/doc/floating_custom/)
++ [Banner HTML5 floating com fechamento automático](https://spaceadx.github.io/doc/floating_timeout/)
++ [Banner HTML5 expansível](https://spaceadx.github.io/doc/expansivel/)
++ [Banner HTML5 expansível para a lateral](https://spaceadx.github.io/doc/expansivel_left/)
++ [Banner HTML5 expansível que empurra o conteúdo](https://spaceadx.github.io/doc/expansivel_push/)
 
 #### Propriedades
 Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação

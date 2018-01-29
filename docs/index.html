@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rocket - Documentation</title>
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="spaceadserver">SPACE ADSERVER</h1>
+    <h2 id="rocketjs">rocket.js</h2>
+    <h3 id="comousar">Como usar?</h3>
+    <p>Inclua o rocket2.js no seu projeto</p>
+    <pre><code class="demo language-demo">&lt;script src="https://cdn.00px.net/static/2.4.min.js"&gt;&lt;/script&gt;
+    </code></pre>
+    <h4 id="exemplos">Exemplos</h4>
+    <ul>
+    <li><a href="https://spaceadx.github.io/doc/html5/">Banner HTML5</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating/">Banner HTML5 floating com botão de fechar</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating_custom/">Banner HTML5 floating com botão de fechar customizado</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating_timeout/">Banner HTML5 floating com fechamento automático</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel/">Banner HTML5 expansível</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel_left/">Banner HTML5 expansível para a lateral</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel_push/">Banner HTML5 expansível que empurra o conteúdo</a></li>
+    </ul>
+    <h4 id="propriedades">Propriedades</h4>
+    <p>Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação</p>
+    <pre><code>var config = {
+      //LARGURA (EM PX, OBRIGATÓRIO)
+      width: 300,
+
+      //ALTURA (EM PX, OBRIGATÓRIO)
+      height: 250,
+
+      //ELEMENTO PARA O REDIRECIONAMENTO (OBRIGATÓRIO)
+      //É USADO EM PRATICAMENTE TODOS OS BANNERS
+      //PODE SER USADO O OBJETO Element, O ID COM '#id', '.class'. CASO SEJA SEM
+      //NENHUM PREFIXO ELE IRÁ PROCURAR PELO ELEMENTO COM O ID CORRESPONDENTE
+      clickElement:'banner',
+
+      //CRIAÇÃO AUTOMÁTICA DO BOTÃO DE FECHAR - DEFAULT: false
+      //closeButton: false,
+
+      //TEXTO CUSTOMIZADO PARA O BOTÃO DE FECHAR - DEFAULT: 'Fechar X'
+      //btnCloseImage: '',
+
+      //IMAGEM CUSTOMIZADA PARA O BOTÃO DE FECHAR - DEFAULT: undefined
+      //(DEVE SER PASSADO O CAMINHO RELATIVO A PASTA RAIZ DO BANNER)
+      //btnCloseImage: '',
+
+      //BOTÃO DE FECHAR DEFINIDO PELO USUÁRIO - DEFAULT: undefined
+      // !! CASO A VARÍAVEL closeButton SEJA true ELA TERÁ PREFERÊNCIA !!
+      //PODE SER USADO O OBJETO Element, O ID COM '#id', '.class'. CASO SEJA SEM
+      //NENHUM PREFIXO ELE IRÁ PROCURAR PELO ELEMENTO COM O ID CORRESPONDENTE
+      //closeElement: 'close',
+
+      //O BANNER DEVE APARECER CENTRALIZADO - DEFAULT: false
+      //centralize: false,
+
+      //O BANNER DEVE APARECER CENTRALIZADO VERTICALMENTE - DEFAULT: false
+      //centralizeY: false,
+
+      //O BANNER DEVE APARECER CENTRALIZADO HORIZONTALMENTE - DEFAULT: false
+      //centralizeX: false,
+
+      //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DO TOPO (EM PX) - DEFAULT: undefined
+      //appendTop: 0,
+
+      //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DEBAIXO (EM PX) - DEFAULT: undefined
+      //appendBottom: 0,
+
+      //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA DIREITA (EM PX) - DEFAULT: undefined
+      //appendRight: 0,
+
+      //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DA ESQUERDA (EM PX) - DEFAULT: undefined
+      //appendLeft: 0
+    }
+
+    new Rocket(config)
+    </code></pre>
+    <h4 id="mtodos">Métodos</h4>
+    <p>Todos os métodos disponíveis</p>
+    <p>close() :[this]</p>
+    <pre><code>//Método para fechar o banner
+    var rocket = new Rocket(config)
+    rocket.close()
+    </code></pre>
+    <p>setCloseTimeout(timer:Integer) :[this]</p>
+    <pre><code>// Seta em quanto tempo o banner será fechado
+    new Rocket(config).setCloseTimeout(1500)
+    </code></pre>
+    <p>expand(widthExpanded:Integer, heightExpanded:Integer) :[this]</p>
+    <pre><code>// Método que deve ser invocado quando o banner precisar expandir
+    var rocket = new Rocket(config)
+    rocket.expand(300,600)
+    </code></pre>
+    <p>collapse() :[this]</p>
+    <pre><code>// Método que deve ser invocado quando o banner precisar retrair
+    var rocket = new Rocket(config)
+    rocket.collapse()
+    </code></pre>
+    <p>tracking(event:String, inc:Integer) :[this]</p>
+    <pre><code>// Método para computar um evento que deseja ser informado a Space
+    // e o incrementa conforme o segundo parametro
+    var rocket = new Rocket(config)
+    rocket.tracking('mouseOver')
+    // Exemplo com incremento customizado
+    rocket.tracking('purchaseTotal',120)
+    </code></pre>
+  </body>
+</html>

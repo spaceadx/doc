@@ -3,7 +3,7 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/2.4.min.js"></script>
+<script src="https://cdn.00px.net/static/2.4.1.min.js"></script>
 ```
 
 #### Exemplos
@@ -57,6 +57,9 @@ var config = {
 
   //O BANNER DEVE APARECER CENTRALIZADO HORIZONTALMENTE - DEFAULT: false
   //centralizeX: false,
+
+  //AJUSTA A POSIÇÃO PARA FIXO AO INVÉS DE ABSOLUTA - DEFAULT: false
+  //fixed: false,
 
   //POSIÇÃO FIXA COM DISTÂNCIA DE X PX A PARTIR DO TOPO (EM PX) - DEFAULT: undefined
   //appendTop: 0,

@@ -8,13 +8,13 @@ Inclua o rocket2.js no seu projeto
 
 #### Exemplos
 
-+ [Banner HTML5](https://spaceadx.github.io/doc/html5/)
-+ [Banner HTML5 floating com botão de fechar](https://spaceadx.github.io/doc/floating/)
-+ [Banner HTML5 floating com botão de fechar customizado](https://spaceadx.github.io/doc/floating_custom/)
-+ [Banner HTML5 floating com fechamento automático](https://spaceadx.github.io/doc/floating_timeout/)
-+ [Banner HTML5 expansível](https://spaceadx.github.io/doc/expansivel/)
-+ [Banner HTML5 expansível para a lateral](https://spaceadx.github.io/doc/expansivel_left/)
-+ [Banner HTML5 expansível que empurra o conteúdo](https://spaceadx.github.io/doc/expansivel_push/)
++ [Banner HTML5](https://spaceadx.github.io/doc/html5/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/html5.zip)
++ [Banner HTML5 floating com botão de fechar](https://spaceadx.github.io/doc/floating/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating.zip)
++ [Banner HTML5 floating com botão de fechar customizado](https://spaceadx.github.io/doc/floating_custom/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating_custom.zip)
++ [Banner HTML5 floating com fechamento automático](https://spaceadx.github.io/doc/floating_timeout/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating_timeout.zip)
++ [Banner HTML5 expansível](https://spaceadx.github.io/doc/expansivel/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel.zip)
++ [Banner HTML5 expansível para a lateral](https://spaceadx.github.io/doc/expansivel_left/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel_left.zip)
++ [Banner HTML5 expansível que empurra o conteúdo](https://spaceadx.github.io/doc/expansivel_push/) - [Download](https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel_push.zip)
 
 #### Propriedades
 Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação

@@ -3,7 +3,7 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/2.4.1.min.js"></script>
+<script src="https://cdn.00px.net/static/2.4.3.3.min.js"></script>
 ```
 
 #### Exemplos
@@ -95,11 +95,13 @@ setCloseTimeout(timer:Integer) :[this]
 // Seta em quanto tempo o banner será fechado
 new Rocket(config).setCloseTimeout(1500)
 ```
-expand(widthExpanded:Integer, heightExpanded:Integer) :[this]
+expand(widthExpanded:Integer, heightExpanded:Integer, direction:String[1]) :[this]
 ```
 // Método que deve ser invocado quando o banner precisar expandir
 var rocket = new Rocket(config)
 rocket.expand(300,600)
+// Pode ser chamado para abrir outras direções, por exemplo para a esquerda
+rocket.expand(300,600,'l')
 ```
 collapse() :[this]
 ```

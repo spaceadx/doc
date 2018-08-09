@@ -26,8 +26,8 @@
     <h1 id="spaceadserver">SPACE ADSERVER</h1>
     <h2 id="rocketjs">rocket.js</h2>
     <h3 id="comousar">Como usar?</h3>
-    <p>Inclua o rocket2.js no seu projeto</p>
-    <pre><code class="demo language-demo">&lt;script src="https://cdn.00px.net/static/2.4.1.min.js"&gt;&lt;/script&gt;
+    <p>Inclua o rocket no seu projeto</p>
+    <pre><code class="demo language-demo">&lt;script src="https://cdn.00px.net/static/2.4.3.3.min.js"&gt;&lt;/script&gt;
     </code></pre>
     <h4 id="exemplos">Exemplos</h4>
     <ul>
@@ -112,10 +112,12 @@
     <pre><code>// Seta em quanto tempo o banner será fechado
     new Rocket(config).setCloseTimeout(1500)
     </code></pre>
-    <p>expand(widthExpanded:Integer, heightExpanded:Integer) :[this]</p>
+    <p>expand(widthExpanded:Integer, heightExpanded:Integer, direction:String[1]) :[this]</p>
     <pre><code>// Método que deve ser invocado quando o banner precisar expandir
     var rocket = new Rocket(config)
     rocket.expand(300,600)
+    // Pode ser chamado para abrir outras direções, por exemplo para a esquerda
+    rocket.expand(300,600,'l')
     </code></pre>
     <p>collapse() :[this]</p>
     <pre><code>// Método que deve ser invocado quando o banner precisar retrair

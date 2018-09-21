@@ -27,17 +27,17 @@
     <h2 id="rocketjs">rocket.js</h2>
     <h3 id="comousar">Como usar?</h3>
     <p>Inclua o rocket no seu projeto</p>
-    <pre><code class="demo language-demo">&lt;script src="https://cdn.00px.net/static/2.4.3.3.min.js"&gt;&lt;/script&gt;
+    <pre><code class="demo language-demo">&lt;script src="https://cdn.00px.net/static/2.4.3.9.min.js"&gt;&lt;/script&gt;
     </code></pre>
     <h4 id="exemplos">Exemplos</h4>
     <ul>
-    <li><a href="https://spaceadx.github.io/doc/html5/">Banner HTML5</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/html5.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/floating/">Banner HTML5 floating com botão de fechar</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/floating_custom/">Banner HTML5 floating com botão de fechar customizado</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating_custom.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/floating_timeout/">Banner HTML5 floating com fechamento automático</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/floating_timeout.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/expansivel/">Banner HTML5 expansível</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/expansivel_left/">Banner HTML5 expansível para a lateral</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel_left.zip">Download</a></li>
-    <li><a href="https://spaceadx.github.io/doc/expansivel_push/">Banner HTML5 expansível que empurra o conteúdo</a> - <a href="https://raw.githubusercontent.com/spaceadx/doc/master/examples/expansivel_push.zip">Download</a></li>
+    <li><a href="https://spaceadx.github.io/doc/html5/">Banner HTML5</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating/">Banner HTML5 floating com botão de fechar</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating_custom/">Banner HTML5 floating com botão de fechar customizado</a></li>
+    <li><a href="https://spaceadx.github.io/doc/floating_timeout/">Banner HTML5 floating com fechamento automático</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel/">Banner HTML5 expansível</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel_left/">Banner HTML5 expansível para a lateral</a></li>
+    <li><a href="https://spaceadx.github.io/doc/expansivel_push/">Banner HTML5 expansível que empurra o conteúdo</a></li>
     </ul>
     <h4 id="propriedades">Propriedades</h4>
     <p>Muitas das propriedades declaradas abaixo podem ser invocadas como métodos caso isso facilite a interpretação</p>
@@ -119,6 +119,11 @@
     // Pode ser chamado para abrir outras direções, por exemplo para a esquerda
     rocket.expand(300,600,'l')
     </code></pre>
+    <p>expandFullScreen() :[this]</p>
+    <pre><code>// Método que deve ser invocado quando o banner precisar expandir em tela cheia
+    var rocket = new Rocket(config)
+    rocket.expandFullScreen()
+    </code></pre>
     <p>collapse() :[this]</p>
     <pre><code>// Método que deve ser invocado quando o banner precisar retrair
     var rocket = new Rocket(config)
@@ -131,6 +136,12 @@
     rocket.tracking('mouseOver')
     // Exemplo com incremento customizado
     rocket.tracking('purchaseTotal',120)
+    </code></pre>
+    <p>getClickUrl() :[url:string]</p>
+    <pre><code>// Método para pegar a url que o usuário deve ser redirecionado
+    var rocket = new Rocket(config)
+    var url = rocket.getClickUrl()
+    window.open(url)
     </code></pre>
   </body>
 </html>

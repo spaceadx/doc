@@ -3,7 +3,7 @@
 ### Como usar?
 Inclua o rocket2.js no seu projeto
 ```demo
-<script src="https://cdn.00px.net/static/2.4.3.3.min.js"></script>
+<script src="https://cdn.00px.net/static/2.4.3.9.min.js"></script>
 ```
 
 #### Exemplos
@@ -103,6 +103,12 @@ rocket.expand(300,600)
 // Pode ser chamado para abrir outras direções, por exemplo para a esquerda
 rocket.expand(300,600,'l')
 ```
+expandFullScreen() :[this]
+```
+// Método que deve ser invocado quando o banner precisar expandir em tela cheia
+var rocket = new Rocket(config)
+rocket.expandFullScreen()
+```
 collapse() :[this]
 ```
 // Método que deve ser invocado quando o banner precisar retrair
@@ -118,4 +124,12 @@ var rocket = new Rocket(config)
 rocket.tracking('mouseOver')
 // Exemplo com incremento customizado
 rocket.tracking('purchaseTotal',120)
+```
+
+getClickUrl() :[url:string]
+```
+// Método para pegar a url que o usuário deve ser redirecionado
+var rocket = new Rocket(config)
+var url = rocket.getClickUrl()
+window.open(url)
 ```
